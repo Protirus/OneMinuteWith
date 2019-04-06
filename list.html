@@ -1,0 +1,43 @@
+<section class="jumbotron title-container text-center">
+    <div>
+        <img 
+            src="/assets/repo-placeholder.png" 
+            alt="Protirus Logo" 
+            height="100px"
+            style="background-color:#4d67c1"
+        >
+    
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="input-group">
+                    <input type="text" class="form-control" ng-model='searchText' placeholder="Search for an Interview ..." aria-label="Search">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</section>
+
+<div>
+    <div class="row">
+        <table>
+            <tbody>
+                <tr ng-repeat="file in files | filter:searchText">
+                    <td>
+                        <img ng-src="{{file.name}}.png"
+                            height="100px"
+                            onerror="this.onerror=null;this.src='/assets/Portrait_Placeholder.png';"/>
+                    </td>
+                    <td>
+                        <a ng-href="/Interview/{{file.name}}">{{file.name}}</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,131 @@
+body {
+    background: #4d67c1;
+}
+
+.container {
+    background: white;
+}
+
+.jumbo-title {
+    display: block;
+    position: relative;
+    width: 75%;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-container {
+    background: White;
+    color: #4d67c1;
+    font-size:1.5rem;
+    font-weight:400;
+}
+
+a:link {
+    color: #3c54aa;
+    font-weight: bold;
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: #4d67c1;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #687dca;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #00ccff;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+/* REPO CARD STYLES */
+
+.rounded-corners {
+    border-radius: 25px;
+    border: 7.5px solid #4d67c1;
+    padding: 20px; 
+    width: 300px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row-container {
+    text-align: center;
+}
+
+.tile-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tile-container h3 {
+    color: #4d67c1;
+}
+
+.card-text-or {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 16px;     /* fallback */
+    max-height: 3em;      /* fallback */
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    min-height: 3em;
+}
+
+.card-view-button {
+    margin-top: 20px;
+}
+
+.card-container {
+    height: 400px;
+}
+
+.card-button {
+    border-color: #4d67c1;
+    color: #4d67c1;
+}
+
+.card-button:hover {
+    background: #4d67c1;
+    border-color: #4d67c1;
+}
+
+.card-img-container {
+    background-color: #4d67c1;
+    width: 100%;
+    height: 275px;
+    padding: 20px;
+}
+
+.card-img-container img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.card-img {
+    display: block;
+    object-fit: contain;
+}
+
+.card-topics-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-pill-primary {
+    color: #fff;
+    background-color: #4d67c1;
+}
