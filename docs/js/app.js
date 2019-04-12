@@ -23,9 +23,12 @@ app.controller('MainCtrl', ['$scope', '$http', '$filter', '$route', '$routeParam
         this.$location = $location;
         this.$routeParams = $routeParams;
 
+        $scope.location = window.location.pathname;
+        //$scope.location = 'OneMinuteWith/';
+        
         var req = {
             method: 'GET',
-            url: 'https://api.github.com/repos/protirus/OneMinuteWith/contents/',
+            url: 'https://api.github.com/repos/protirus/OneMinuteWith/contents/interviews/',
             // https://raw.githubusercontent.com/:owner/:repo/master/:path
             // https://raw.githubusercontent.com/Protirus/Tagger/master/README.md
             headers: {
@@ -37,7 +40,9 @@ app.controller('MainCtrl', ['$scope', '$http', '$filter', '$route', '$routeParam
             $http(req)
                 .then(function(response) {
                     angular.forEach(response.data, function(item) {
-                        if (item.name.substr(item.name.lastIndexOf('.')+1) === 'md') {
+                        var fileName = item.name.substr(item.name.lastIndexOf('.')+1);
+                        if (fileName === 'md') {
+                            item.fileName = fileName;
                             $scope.files.push(item);
                         }
                     });

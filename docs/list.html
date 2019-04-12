@@ -6,7 +6,7 @@
             height="100px"
             style="background-color:#4d67c1"
         >
-    
+        
         <div class="row">
             <div class="col-lg-12">
                 <div class="input-group">
@@ -29,12 +29,12 @@
             <tbody>
                 <tr ng-repeat="file in files | filter:searchText">
                     <td>
-                        <img ng-src="{{file.name}}.png"
+                        <img ng-src="{{file.fileName}}.png"
                             height="100px"
                             onerror="this.onerror=null;this.src='/OneMinuteWith/assets/Portrait_Placeholder.png';"/>
                     </td>
                     <td>
-                        <a ng-href="/OneMinuteWith/Interview/{{file.name}}">{{file.name}}</a>
+                        <a ng-href="{{location}}/Interview/{{file.name}}">{{file.name}}</a>
                     </td>
                 </tr>
             </tbody>
