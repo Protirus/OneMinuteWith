@@ -12,7 +12,11 @@ app.config(['$routeProvider', '$locationProvider',
                 templateUrl: 'interview.html',
                 controller: 'InterviewCtrl',
                 controllerAs: 'interview'
-            });
+            })
+            // .otherwise({
+            //     controller: 'MainCtrl'
+            // });
+            ;
         $locationProvider.html5Mode(true);
     }]
 );
