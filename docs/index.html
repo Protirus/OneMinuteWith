@@ -57,7 +57,10 @@
 
     <script type="text/javascript">
       // angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="' + window.location.pathname + '" />'));
-      document.getElementById('baseHref').href = window.location.pathname.split('/')[1] + "/";
+      var loc = window.location.pathname.split('/')[1];
+      loc = loc != "" ? '/' + loc + '/' : '/';
+      console.log(location);
+      document.getElementById('baseHref').href = loc;
     </script>
   </body>
 </html>
