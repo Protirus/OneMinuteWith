@@ -25,7 +25,7 @@ app.controller('MainCtrl', ['$scope', '$http', '$filter', '$route', '$routeParam
 
         $scope.location = window.location.pathname;
         //$scope.location = 'OneMinuteWith/';
-        
+
         var req = {
             method: 'GET',
             url: 'https://api.github.com/repos/protirus/OneMinuteWith/contents/interviews/',
@@ -65,7 +65,7 @@ app.controller('InterviewCtrl', ['$scope', '$http', '$routeParams',
 
         loadFile = (fileName) => {
             console.log(fileName);
-            var url = 'https://raw.githubusercontent.com/Protirus/OneMinuteWith/master/' + fileName;
+            var url = 'https://raw.githubusercontent.com/Protirus/OneMinuteWith/master/interviews/' + fileName;
             $scope.url = url;
             console.log(url);
             // var req = {
