@@ -204,3 +204,16 @@ a:active {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
+
+.items .item:nth-child(3n - 0).aos-animate {
+    transition-delay: 0.4s;
+  }
+  
+  .items .item:nth-child(3n - 1).aos-animate {
+    transition-delay: 0.2s;
+  }
+  
+  .items .item:nth-child(3n - 2).aos-animate {
+    transition-delay: 0s;
+  }
+  
