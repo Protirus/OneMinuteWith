@@ -97,6 +97,7 @@ Function InputInterview
     Write-Host "Please Enter The GitHub Interview Url"
     Write-Host -ForegroundColor DarkYellow "aka https://github.com/Protirus/OneMinuteWith/blob/master/interviews/ProtirusEmployee.md"
     $inputInterviewUrl = Read-Host
+    $inputFileName = Split-Path $inputInterviewUrl -Leaf
 
     Write-Host "Please Enter The Employee Picture Url"
     Write-Host -ForegroundColor DarkYellow "aka https://avatars2.githubusercontent.com/u/33064621?s=460&v=4"
@@ -115,8 +116,9 @@ Function InputInterview
     $inputInterview | Add-Member -MemberType NoteProperty -Name employeeName -Value $inputName
     #$inputInterview | Add-Member -MemberType NoteProperty -Name employeeName -Value "$inputFirstName $inputLastName"
     $inputInterview | Add-Member -MemberType NoteProperty -Name employeeRole -Value $inputRole
-    $inputInterview | Add-Member -MemberType NoteProperty -Name employeeRole -Value inputShortDescription
+    $inputInterview | Add-Member -MemberType NoteProperty -Name shortDescription -Value inputShortDescription
     $inputInterview | Add-Member -MemberType NoteProperty -Name interviewUrl -Value $inputInterviewUrl
+    $inputInterview | Add-Member -MemberType NoteProperty -Name fileName -Value $inputFileName
     $inputInterview | Add-Member -MemberType NoteProperty -Name imageUrl -Value $inputImageUrl
     $inputInterview | Add-Member -MemberType NoteProperty -Name interviewDate -Value $inputInterviewDate
 
