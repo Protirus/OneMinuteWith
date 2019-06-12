@@ -23,7 +23,7 @@
 <section class="interview-card-deck">
     <div class="row">
         <div ng-repeat="interview in interviews | filter:searchText" class="col-md-4">
-            <div class="card box-shadow animated" data-aos="fade-up" data-aos-delay="{{$index * 300}}" data-aos-duration="1000" style="margin-bottom: 30px;">
+            <div class="card box-shadow animated" data-aos="fade-up" data-aos-delay="{{($index % 3 ) * 300}}" data-aos-duration="1000" style="margin-bottom: 30px;">
                 <div class="card-img-container">
                     <!--TODO: Placeholder!-->
                     <!--TODO: Alt Text!-->
@@ -31,8 +31,7 @@
                 </div>
                 <div class="card-body">
                 <h3>{{interview.employeeName.fullName}}</h3>
-                <!-- <h4>{{interview.employeeRole}}</h4> -->
-                <b>{{$index * 100}}</b>
+                <h4>{{interview.employeeRole}}</h4>
                 <div class="card-text-or">
                     <p>{{interview.shortDescription}}</p>
                 </div>
