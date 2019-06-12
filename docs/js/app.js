@@ -46,12 +46,6 @@ app.controller('MainCtrl', ['$scope', '$http', '$filter', '$route', '$routeParam
             $http(req)
                 .then(function(response) {
                     angular.forEach(response.data, function(item) {
-                        // var fileName = item.name.substr(item.name.lastIndexOf('.')+1);
-                        // if (fileName === 'md') {
-                        //     item.fileName = fileName;
-                        //     $scope.files.push(item);
-                        // }
-
                         $scope.interviews.push(item);
                     });
                 }
@@ -59,7 +53,6 @@ app.controller('MainCtrl', ['$scope', '$http', '$filter', '$route', '$routeParam
         };
 
         $scope.init = () => {
-            // $scope.files = [];
             $scope.interviews = [];
             loadFiles();
         };
