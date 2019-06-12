@@ -47,6 +47,10 @@ html {
     margin-right: auto;
 }
 
+.jumbotron {
+    padding-bottom: 0px !important;
+}
+
 .title-container {
     background: transparent;
     color: #4d67c1;
@@ -184,4 +188,19 @@ a:active {
     font-size: 1em;
     text-align: left;
     font-family: Hind Guntur Light;
+}
+
+.search-bar {
+
+}
+
+.search-bar i {
+    color: white;
+}
+
+.search-bar button {
+    background-color: #4466C7;
+
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
