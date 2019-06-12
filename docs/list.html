@@ -19,44 +19,28 @@
     </div>
 </section>
 
-<div>
+<section class="interview-card-deck">
     <div class="row">
-
-        <div ng-repeat="interview in interviews | filter:searchText">
-            <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                    <img ng-src="{{interview.imageUrl}}.png" class="card-img-top" style="height: 225px; width: 100%; display: block;"
-                        onerror="this.onerror=null;this.src='/assets/Portrait_Placeholder.png';"/>
-                    
-                    <div class="card-body">
-                    <b>{{interview.employeeName.fullName}}</b>
-                    </br>
-                    <b>{{interview.employeeRole}}</b>
-                    <p class="card-text">{{interview.shortDescription}}</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                        </div>
-                        <small class="text-muted">9 mins</small>
-                    </div>
+        <div ng-repeat="interview in interviews | filter:searchText" class="col-md-4">
+            <div class="card box-shadow" style="margin-bottom: 30px;">
+                <div class="card-img-container">
+                    <!--TODO: Placeholder!-->
+                    <!--TODO: Alt Text!-->
+                    <img class="card-img" ng-src="{{interview.imageUrl}}" onerror="this.onerror=null;this.src='/assets/repo-placeholder.png';"/>
+                </div>
+                <div class="card-body">
+                <h3>{{interview.employeeName.fullName}}</h3>
+                <h4>{{interview.employeeRole}}</h4>
+                <div class="card-text-or">
+                    <p>{{interview.shortDescription}}</p>
+                </div>
+                <div class="d-flex justify-content-between card-view-button align-items-center">
+                    <div class="btn-group">
+                        <!--TODO: Hover Text!-->
+                        <a class="btn btn-sm btn-outline-secondary" ng-href="{{location}}/Interview/{{interview.fileName}}">View</a>
                     </div>
                 </div>
             </div>
         </div>
-            
-        <!-- <table>
-            <tbody>
-                <tr ng-repeat="file in files | filter:searchText">
-                    <td class="col-md-12">
-                        <img ng-src="{{file.fileName}}.png"
-                            height="100px"
-                            onerror="this.onerror=null;this.src='/assets/Portrait_Placeholder.png';"/>
-                    </td>
-                    <td>
-                        <a ng-href="{{location}}/Interview/{{file.name}}">{{file.name}}</a>
-                    </td>
-                </tr>
-            </tbody>
-        </table> -->
     </div>
-</div>
+</section>
