@@ -25,14 +25,12 @@ Function GetJsonFilePath
 
     $exists = Test-Path -Path $jsonPath
 
-    if ($exists)
-    {
-        return $jsonPath
-    }
-    else
+    if (!$exists)
     {
         New-Item -Path $jsonPath -ItemType File
     }
+    
+    return $jsonPath
 }
 
 Function ParseAndValidateJson($filePath)
@@ -44,7 +42,8 @@ Function ParseAndValidateJson($filePath)
 
     $fileContents = Get-Content -Path $filePath | Out-String
 
-    if ($fileContents -eq $null)
+    #if ($fileContents -eq $null)
+    if ($null -eq $fileContents)
     {
         $ErrorReason = "Interviews is empty"
         Write-Host $ErrorReason
@@ -110,7 +109,6 @@ Function InputInterview
     $inputName | Add-Member -MemberType NoteProperty -Name lastName -Value $inputLastName
     $inputName | Add-Member -MemberType NoteProperty -Name fullName -Value "$inputFirstName $inputLastName"
 
-
     $inputInterview | Add-Member -MemberType NoteProperty -Name employeeName -Value $inputName
     #$inputInterview | Add-Member -MemberType NoteProperty -Name employeeName -Value "$inputFirstName $inputLastName"
     $inputInterview | Add-Member -MemberType NoteProperty -Name employeeRole -Value $inputRole
@@ -163,7 +161,7 @@ Function SaveToFile($filePath, [array]$data)
 
 #endregion
 
-##Implementation
+#--Implementation--#
 
 #region Implementation
 
