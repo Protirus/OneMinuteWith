@@ -1,0 +1,47 @@
+[
+  {
+    "employeeName": {
+      "firstName": "Joe",
+      "lastName": "Bloggs",
+      "fullName": "Joe Bloggs"
+    },
+    "employeeRole": "CEO",
+    "interviewUrl": "https://raw.githubusercontent.com/Protirus/OneMinuteWith/fancyui/interviews/JoeBloggs.md",
+    "imageUrl": "https://bestcellphonespyapps.com/wp-content/uploads/2017/09/pexels-photo-220453-1-1001x1024.jpeg",
+    "interviewDate": "05/01/2019"
+  },
+  {
+    "employeeName": {
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "fullName": "Jane Doe"
+    },
+    "employeeRole": "Software Developer",
+    "interviewUrl": "https://raw.githubusercontent.com/Protirus/OneMinuteWith/fancyui/interviews/JaneDoe.md",
+    "imageUrl": "https://media.istockphoto.com/photos/portrait-of-a-girl-picture-id938709362?k=6&m=938709362&s=612x612&w=0&h=mUQAOuFjTUhvykTbkpXXERePajEWvVqOM2tR3gwS3II=",
+    "interviewDate": "12/06/2019"
+  },
+  {
+    "employeeName": {
+      "firstName": "Carla",
+      "lastName": "Coe",
+      "fullName": "Carla Coe"
+    },
+    "employeeRole": "Senior Analyst",
+    "interviewUrl": "https://raw.githubusercontent.com/Protirus/OneMinuteWith/fancyui/interviews/CarlaCoe.md",
+    "imageUrl": "https://previews.123rf.com/images/racorn/racorn1308/racorn130805649/21341221-profile-portrait-of-a-charming-young-business-woman-being-happy-and-smiling-in-an-office-setting-.jpg",
+    "interviewDate": "20/03/2019"
+  },
+  {
+    "employeeName": {
+      "firstName": "John",
+      "lastName": "Smith",
+      "fullName": "John Smith"
+    },
+    "employeeRole": "Receptionist",
+    "interviewUrl": "https://raw.githubusercontent.com/Protirus/OneMinuteWith/fancyui/interviews/JohnSmith.md",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjQSpeqioBrMPX5awUikplxUZCqiz2TPiUozPsZ9cPn3CAyTL0",
+    "interviewDate": "05/05/2019"
+  }
+]
+
