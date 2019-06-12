@@ -32,7 +32,8 @@ app.controller('MainCtrl', ['$scope', '$http', '$filter', '$route', '$routeParam
 
         var req = {
             method: 'GET',
-            url: 'https://api.github.com/repos/protirus/OneMinuteWith/contents/interviews?ref=fancyui',
+            url: 'https://raw.githubusercontent.com/Protirus/OneMinuteWith/fancyui/interviews/interviews.json',
+            // url: 'https://api.github.com/repos/protirus/OneMinuteWith/contents/interviews/interviews.json?ref=fancyui',
             // url: 'https://api.github.com/repos/protirus/OneMinuteWith/contents/interviews/',
             // https://raw.githubusercontent.com/:owner/:repo/master/:path
             // https://raw.githubusercontent.com/Protirus/Tagger/master/README.md
@@ -45,18 +46,21 @@ app.controller('MainCtrl', ['$scope', '$http', '$filter', '$route', '$routeParam
             $http(req)
                 .then(function(response) {
                     angular.forEach(response.data, function(item) {
-                        var fileName = item.name.substr(item.name.lastIndexOf('.')+1);
-                        if (fileName === 'md') {
-                            item.fileName = fileName;
-                            $scope.files.push(item);
-                        }
+                        // var fileName = item.name.substr(item.name.lastIndexOf('.')+1);
+                        // if (fileName === 'md') {
+                        //     item.fileName = fileName;
+                        //     $scope.files.push(item);
+                        // }
+
+                        $scope.interviews.push(item);
                     });
                 }
             );
         };
 
         $scope.init = () => {
-            $scope.files = [];
+            // $scope.files = [];
+            $scope.interviews = [];
             loadFiles();
         };
         //$scope.init();

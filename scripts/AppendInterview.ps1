@@ -91,6 +91,9 @@ Function InputInterview
     Write-Host "Please Enter The Employee's Role"
     $inputRole = Read-Host
 
+    Write-Host "Please Enter A Short Description Of The Employee"
+    $inputShortDescription = Read-Host
+
     Write-Host "Please Enter The GitHub Interview Url"
     Write-Host -ForegroundColor DarkYellow "aka https://github.com/Protirus/OneMinuteWith/blob/master/interviews/ProtirusEmployee.md"
     $inputInterviewUrl = Read-Host
@@ -112,6 +115,7 @@ Function InputInterview
     $inputInterview | Add-Member -MemberType NoteProperty -Name employeeName -Value $inputName
     #$inputInterview | Add-Member -MemberType NoteProperty -Name employeeName -Value "$inputFirstName $inputLastName"
     $inputInterview | Add-Member -MemberType NoteProperty -Name employeeRole -Value $inputRole
+    $inputInterview | Add-Member -MemberType NoteProperty -Name employeeRole -Value inputShortDescription
     $inputInterview | Add-Member -MemberType NoteProperty -Name interviewUrl -Value $inputInterviewUrl
     $inputInterview | Add-Member -MemberType NoteProperty -Name imageUrl -Value $inputImageUrl
     $inputInterview | Add-Member -MemberType NoteProperty -Name interviewDate -Value $inputInterviewDate

@@ -22,17 +22,17 @@
 <div>
     <div class="row">
 
-        <div ng-repeat="file in files | filter:searchText">
+        <div ng-repeat="interview in interviews | filter:searchText">
             <div class="col-md-4">
                 <div class="card mb-4 box-shadow">
-                    <img ng-src="{{file.fileName}}.png" class="card-img-top" style="height: 225px; width: 100%; display: block;"
+                    <img ng-src="{{interview.imageUrl}}.png" class="card-img-top" style="height: 225px; width: 100%; display: block;"
                         onerror="this.onerror=null;this.src='/assets/Portrait_Placeholder.png';"/>
                     
                     <div class="card-body">
-                    <b>{{file.name}}</b>
+                    <b>{{interview.employeeName.fullName}}</b>
                     </br>
-                    <b>Junior Security Consultant</b>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <b>{{interview.employeeRole}}</b>
+                    <p class="card-text">{{interview.shortDescription}}</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
