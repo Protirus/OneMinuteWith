@@ -9,7 +9,7 @@
     "shortDescription" : "Joe is our CEO, he likes collecting stamps and doing his taxes.",
     "interviewUrl": "https://raw.githubusercontent.com/Protirus/OneMinuteWith/fancyui/interviews/JoeBloggs.md",
     "fileName" : "JoeBloggs.md",
-    "imageUrl": "https://imgur.com/nlHUzQi",
+    "imageUrl": "https://i.imgur.com/nlHUzQi.jpg",
     "interviewDate": "05/01/2019"
   },
   {
@@ -22,7 +22,7 @@
     "shortDescription" : "Jane is our resident computer whizz, today she talks about her favourite programming language.",
     "interviewUrl": "https://raw.githubusercontent.com/Protirus/OneMinuteWith/fancyui/interviews/JaneDoe.md",
     "fileName" : "JaneDoe.md",
-    "imageUrl": "https://imgur.com/JW1LrNn",
+    "imageUrl": "https://i.imgur.com/JW1LrNn.jpg",
     "interviewDate": "12/06/2019"
   },
   {
@@ -35,7 +35,7 @@
     "shortDescription" : "Carla does the number crunching, why does she do this?",
     "interviewUrl": "https://raw.githubusercontent.com/Protirus/OneMinuteWith/fancyui/interviews/CarlaCoe.md",
     "fileName" : "CarlaCoe.md",
-    "imageUrl": "https://imgur.com/X0J3WpS",
+    "imageUrl": "https://i.imgur.com/X0J3WpS.jpg",
     "interviewDate": "20/03/2019"
   },
   {
@@ -48,7 +48,7 @@
     "shortDescription" : "John has big dreams of becoming a dancer...",
     "interviewUrl": "https://raw.githubusercontent.com/Protirus/OneMinuteWith/fancyui/interviews/JohnSmith.md",
     "fileName" : "JohnSmith.md",
-    "imageUrl": "https://imgur.com/uJ2MMUT",
+    "imageUrl": "https://i.imgur.com/uJ2MMUT.jpg",
     "interviewDate": "05/05/2019"
   }
 ]
