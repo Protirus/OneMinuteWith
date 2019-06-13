@@ -24,12 +24,9 @@
     <div class="row">
         <div ng-repeat="interview in interviews | filter:searchText" class="col-md-4">
             <div class="card box-shadow animated" data-aos="fade-up" data-aos-delay="{{($index % 3 ) * 300}}" data-aos-duration="1000" style="margin-bottom: 30px;">
-                <div class="card-img-container">
-                    <!--TODO: Placeholder!-->
-                    <!--TODO: Alt Text!-->
-                    <!-- <img class="card-img" src="/assets/Portrait_Placeholder.png"/> -->
-                    <img class="card-img" ng-src="{{interview.imageUrl}}" onerror="this.onerror=null;this.src='/assets/placeholder-prt.png';"/>
-                </div>
+                <a class="card-img-container" ng-href="/Interview/{{interview.fileName}}" title="One Minute With {{interview.employeeName.firstName}}">
+                    <img class="card-img" ng-src="{{interview.imageUrl}}" ng-alt="Image of {{interview.employeeName.fullName}} - {{interview.employeeRole}}" onerror="this.onerror=null;this.src='/assets/placeholder-prt.png';"/>
+                </a>
                 <div class="card-body">
                 <h3>{{interview.employeeName.fullName}}</h3>
                 <h4>{{interview.employeeRole}}</h4>
@@ -38,8 +35,7 @@
                 </div>
                 <div class="d-flex justify-content-between card-view-button align-items-center">
                     <div class="btn-group">
-                        <!--TODO: Hover Text!-->
-                        <a class="btn btn-sm btn-outline-secondary" ng-href="{{location}}/Interview/{{interview.fileName}}">View</a>
+                        <a class="btn btn-sm btn-outline-secondary" ng-href="{{location}}/Interview/{{interview.fileName}}" title="One Minute With {{interview.employeeName.firstName}}">View</a>
                     </div>
                 </div>
             </div>
