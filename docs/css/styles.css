@@ -216,4 +216,20 @@ a:active {
   .items .item:nth-child(3n - 2).aos-animate {
     transition-delay: 0s;
   }
-  
+
+.card-img-container {
+    background-color: #4466C7;
+    width: 100%;
+    max-height: 275px;
+    padding: 0px !important;
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.card {
+    overflow: hidden;
+}
