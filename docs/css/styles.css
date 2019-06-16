@@ -233,3 +233,21 @@ a:active {
 .card {
     overflow: hidden;
 }
+
+.card-btn {
+    color: #4466C7;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #4466C7;
+    border-radius: 10%;
+    padding: 2.5px 5px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.card-btn:hover {
+    color: white;
+    background-color: #4466C7 !important;
+    text-decoration: none;
+    transition: 0.3s;
+}
