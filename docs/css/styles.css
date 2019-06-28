@@ -216,6 +216,7 @@ a:active {
 .card-img-container {
     background-color: #4466C7;
     width: 100%;
+    height: auto;
     max-height: 275px;
     padding: 0px !important;
     overflow: hidden;
