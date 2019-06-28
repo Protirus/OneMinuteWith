@@ -1,6 +1,27 @@
-<div ng-controller="InterviewCtrl" data-ng-init="init()">
-    <!-- <div markdown ng-bind="contents"></div> -->
-    <div markdown ng-include="url | trusted"></div>
-    <!-- <div markdown ng-include src="url | trusted"></div> -->
-    <!-- <div markdown ng-include src="'https://raw.githubusercontent.com/Protirus/Tagger/master/README.md' | trusted"></div> -->
+<div class="interview-container">
+    <div ng-controller="InterviewCtrl" data-ng-init="init()">
+        <!-- <div markdown ng-bind="contents"></div> -->
+    <img src="https://i.ibb.co/MhRMr7p/joebloggs.jpg">
+
+        <div style="padding: 0 25px;" markdown ng-include="url | trusted"></div>
+        <!-- <div markdown ng-include src="url | trusted"></div> -->
+        <!-- <div markdown ng-include src="'https://raw.githubusercontent.com/Protirus/Tagger/master/README.md' | trusted"></div> -->
+
+        <div class="footer-section" style="padding-top: 100px;">
+            <p>Find out more about Protirus and the services we can offer at <a href="https://www.protirus.com/" target="_blank">www.protirus.com</a></p>
+
+            <div class="footer-copyright">
+                <a href="https://www.protirus.com/" target="_blank">
+                    <img src="/assets/protirus-p-blue.svg">
+                </a>
+                <div style="padding-left: 7.5px; padding-top: 3px;">
+                    &copy;
+                    <span id="copyright">
+                        <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                    </span>
+                    Protirus UK LTD
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
