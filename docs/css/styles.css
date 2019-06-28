@@ -106,7 +106,7 @@ a:active {
 }
 
 .card-text-or {
-    overflow: hidden;
+    overflow: visible;
     text-overflow: ellipsis;
     display: -webkit-box;
     line-height: 16px;     /* fallback */
@@ -114,6 +114,12 @@ a:active {
     -webkit-line-clamp: 3; /* number of lines to show */
     -webkit-box-orient: vertical;
     min-height: 3em;
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+    .card-text-or {
+        overflow: hidden;
+    }
 }
 
 .card-view-button {
