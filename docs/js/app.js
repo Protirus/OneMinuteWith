@@ -82,8 +82,10 @@ app.controller('InterviewCtrl', ['$scope', '$http', '$routeParams',
                         var record = response.data.filter(element => element.fileName == fileName)[0];
 
                         var profilePicture = record.imageUrl;
+                        var altText = "A picture of " + record.employeeName.fullName;
                     
                         $("#interview-pp").attr("src", profilePicture);
+                        $("#interview-pp").attr("alt", altText);
                     }
                 );
             };
