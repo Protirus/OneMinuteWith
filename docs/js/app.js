@@ -112,9 +112,8 @@ app.controller('InterviewCtrl', ['$scope', '$http', '$routeParams',
         };
 
         function SetProfilePictureFrameSize() {
-            var cw = $('.pp-frame').width();
+            var cw = $('.pp-wrapper').width();
             $('.pp-frame').css({'height':cw+'px'});
-            $('.pp-frame').css({'max-height':cw+'px'});
         }
         //$scope.init();
     }
