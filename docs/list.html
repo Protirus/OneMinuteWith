@@ -24,7 +24,7 @@
     <div class="row">
         <div ng-repeat="interview in interviews | filter:searchText" class="col-md-4">
             <div class="card box-shadow animated" data-aos="fade-up" data-aos-delay="{{($index % 3 ) * 300}}" data-aos-duration="1000" style="margin-bottom: 30px;">
-                <a class="card-img-container" ng-href="/Interview/{{interview.fileName}}" title="One Minute With {{interview.employeeName.firstName}}">
+                <a class="card-img-container" ng-href="{{location}}/Interview/{{interview.fileName}}" title="One Minute With {{interview.employeeName.firstName}}">
                     <img class="card-img" ng-src="{{interview.imageUrl}}" ng-alt="Image of {{interview.employeeName.fullName}} - {{interview.employeeRole}}" onerror="this.onerror=null;this.src='/assets/placeholder-prt.png';"/>
                 </a>
                 <div class="card-body">
@@ -34,7 +34,7 @@
                     <p>{{interview.shortDescription}}</p>
                 </div>
                 <div class="d-flex justify-content-between card-view-button align-items-center">
-                    <a class="card-btn" ng-href="{{window.location.pathname}}/Interview/{{interview.fileName}}" title="One Minute With {{interview.employeeName.firstName}}">View</a>
+                    <a class="card-btn" ng-href="{{location}}/Interview/{{interview.fileName}}" title="One Minute With {{interview.employeeName.firstName}}">View</a>
                 </div>
             </div>
         </div>
