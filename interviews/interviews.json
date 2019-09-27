@@ -1,0 +1,55 @@
+[
+  {
+    "employeeName": {
+      "firstName": "Joe",
+      "lastName": "Bloggs",
+      "fullName": "Joe Bloggs"
+    },
+    "employeeRole": "CEO",
+    "shortDescription" : "Joe is our CEO, he likes collecting stamps and doing his taxes.",
+    "interviewUrl": "https://raw.githubusercontent.com/Protirus/OneMinuteWith/fancyui/interviews/JoeBloggs.md",
+    "fileName" : "JoeBloggs.md",
+    "imageUrl": "https://i.ibb.co/MhRMr7p/joebloggs.jpg",
+    "interviewDate": "05/01/2019"
+  },
+  {
+    "employeeName": {
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "fullName": "Jane Doe"
+    },
+    "employeeRole": "Software Developer",
+    "shortDescription" : "Jane is our resident computer whizz, today she talks about her favourite programming language.",
+    "interviewUrl": "https://raw.githubusercontent.com/Protirus/OneMinuteWith/fancyui/interviews/JaneDoe.md",
+    "fileName" : "JaneDoe.md",
+    "imageUrl": "https://i.ibb.co/LStwhp5/janedoe.jpg",
+    "interviewDate": "12/06/2019"
+  },
+  {
+    "employeeName": {
+      "firstName": "Carla",
+      "lastName": "Coe",
+      "fullName": "Carla Coe"
+    },
+    "employeeRole": "Senior Analyst",
+    "shortDescription" : "Carla does the number crunching, why does she do this?",
+    "interviewUrl": "https://raw.githubusercontent.com/Protirus/OneMinuteWith/fancyui/interviews/CarlaCoe.md",
+    "fileName" : "CarlaCoe.md",
+    "imageUrl": "https://i.ibb.co/ncYgqRS/carlacoe.jpg",
+    "interviewDate": "20/03/2019"
+  },
+  {
+    "employeeName": {
+      "firstName": "John",
+      "lastName": "Smith",
+      "fullName": "John Smith"
+    },
+    "employeeRole": "Receptionist",
+    "shortDescription" : "John has big dreams of becoming a dancer...",
+    "interviewUrl": "https://raw.githubusercontent.com/Protirus/OneMinuteWith/fancyui/interviews/JohnSmith.md",
+    "fileName" : "JohnSmith.md",
+    "imageUrl": "https://i.ibb.co/3F92JvM/johnsmith.jpg",
+    "interviewDate": "05/05/2019"
+  }
+]
+

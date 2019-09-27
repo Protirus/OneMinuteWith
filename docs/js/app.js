@@ -27,14 +27,12 @@ app.controller('MainCtrl', ['$scope', '$http', '$filter', '$route', '$routeParam
         this.$location = $location;
         this.$routeParams = $routeParams;
 
-        $scope.location = window.location.pathname;
+        // $scope.location = window.location.pathname;
         //$scope.location = 'OneMinuteWith/';
 
         var req = {
             method: 'GET',
-            url: 'https://api.github.com/repos/protirus/OneMinuteWith/contents/interviews/',
-            // https://raw.githubusercontent.com/:owner/:repo/master/:path
-            // https://raw.githubusercontent.com/Protirus/Tagger/master/README.md
+            url: 'https://raw.githubusercontent.com/Protirus/OneMinuteWith/master/interviews/interviews.json',
             headers: {
                 'Accept': 'application/vnd.github.mercy-preview+json'
             }
@@ -44,18 +42,14 @@ app.controller('MainCtrl', ['$scope', '$http', '$filter', '$route', '$routeParam
             $http(req)
                 .then(function(response) {
                     angular.forEach(response.data, function(item) {
-                        var fileName = item.name.substr(item.name.lastIndexOf('.')+1);
-                        if (fileName === 'md') {
-                            item.fileName = fileName;
-                            $scope.files.push(item);
-                        }
+                        $scope.interviews.push(item);
                     });
                 }
             );
         };
 
         $scope.init = () => {
-            $scope.files = [];
+            $scope.interviews = [];
             loadFiles();
         };
         //$scope.init();
@@ -68,32 +62,59 @@ app.controller('InterviewCtrl', ['$scope', '$http', '$routeParams',
         this.params = $routeParams;
 
         loadFile = (fileName) => {
-            console.log(fileName);
+            //console.log(fileName);
             var url = 'https://raw.githubusercontent.com/Protirus/OneMinuteWith/master/interviews/' + fileName;
             $scope.url = url;
-            console.log(url);
-            // var req = {
-            //     method: 'GET',
-            //     url: url,
-            //     headers: {
-            //         'Accept': 'application/vnd.github.mercy-preview+json'
-            //     }
-            // };
+            //console.log(url);
 
-            // $http(req)
-            //     .then(function(response) {
-            //         //console.log(response.data);
-            //         $scope.contents = response.data;
-            //         //$scope.$apply();
-            //     }
-            // );
+            var req = {
+                method: 'GET',
+                url: 'https://raw.githubusercontent.com/Protirus/OneMinuteWith/master/interviews/interviews.json',
+                headers: {
+                    'Accept': 'application/vnd.github.mercy-preview+json'
+                }
+            };
+    
+            loadInterviewData = (fileName) => {
+                $http(req)
+                    .then(function(response) {
+
+                        console.log("Got records, filtering");
+                        var record = response.data.filter(element => element.fileName == fileName)[0];
+
+                        var profilePicture = record.imageUrl;
+                    
+                        $("#interview-pp").attr("src", profilePicture);
+                    }
+                );
+            };
+
+            //load image
+            //set image src
+
+            // $("#interview-pp").attr("src", "https://i.ibb.co/MhRMr7p/joebloggs.jpg");
         };
 
         $scope.init = () => {
             $scope.contents = '';
             console.log(this.params);
             loadFile(this.params["fileName"]);
+            loadInterviewData(this.params["fileName"]);
+
+            $( document ).ready(function() {
+                SetProfilePictureFrameSize();
+            });
+        
+            $(window).on('resize', function() {
+                SetProfilePictureFrameSize();
+            });
         };
+
+        function SetProfilePictureFrameSize() {
+            var cw = $('.pp-frame').width();
+            $('.pp-frame').css({'height':cw+'px'});
+            $('.pp-frame').css({'max-height':cw+'px'});
+        }
         //$scope.init();
     }
 ]
