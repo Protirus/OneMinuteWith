@@ -79,7 +79,6 @@ app.controller('InterviewCtrl', ['$scope', '$http', '$routeParams',
                 $http(req)
                     .then(function(response) {
 
-                        console.log("Got records, filtering");
                         var record = response.data.filter(element => element.fileName == fileName)[0];
 
                         var profilePicture = record.imageUrl;
