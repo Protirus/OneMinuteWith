@@ -66,32 +66,63 @@ app.controller('InterviewCtrl', ['$scope', '$http', '$routeParams',
         this.params = $routeParams;
 
         loadFile = (fileName) => {
-            console.log(fileName);
+            //console.log(fileName);
             var url = 'https://raw.githubusercontent.com/Protirus/OneMinuteWith/fancyui/interviews/' + fileName;
             $scope.url = url;
-            console.log(url);
-            // var req = {
-            //     method: 'GET',
-            //     url: url,
-            //     headers: {
-            //         'Accept': 'application/vnd.github.mercy-preview+json'
-            //     }
-            // };
+            //console.log(url);
 
-            // $http(req)
-            //     .then(function(response) {
-            //         //console.log(response.data);
-            //         $scope.contents = response.data;
-            //         //$scope.$apply();
-            //     }
-            // );
+            var req = {
+                method: 'GET',
+                url: 'https://raw.githubusercontent.com/Protirus/OneMinuteWith/fancyui/interviews/interviews.json',
+                // url: 'https://api.github.com/repos/protirus/OneMinuteWith/contents/interviews/interviews.json?ref=fancyui',
+                // url: 'https://api.github.com/repos/protirus/OneMinuteWith/contents/interviews/',
+                // https://raw.githubusercontent.com/:owner/:repo/master/:path
+                // https://raw.githubusercontent.com/Protirus/Tagger/master/README.md
+                headers: {
+                    'Accept': 'application/vnd.github.mercy-preview+json'
+                }
+            };
+    
+            loadInterviewData = (fileName) => {
+                $http(req)
+                    .then(function(response) {
+
+                        console.log("Got records, filtering");
+                        var record = response.data.filter(element => element.fileName == fileName)[0];
+
+                        var profilePicture = record.imageUrl;
+                    
+                        $("#interview-pp").attr("src", profilePicture);
+                    }
+                );
+            };
+
+            //load image
+            //set image src
+
+            // $("#interview-pp").attr("src", "https://i.ibb.co/MhRMr7p/joebloggs.jpg");
         };
 
         $scope.init = () => {
             $scope.contents = '';
             console.log(this.params);
             loadFile(this.params["fileName"]);
+            loadInterviewData(this.params["fileName"]);
+
+            $( document ).ready(function() {
+                SetProfilePictureFrameSize();
+            });
+        
+            $(window).on('resize', function() {
+                SetProfilePictureFrameSize();
+            });
         };
+
+        function SetProfilePictureFrameSize() {
+            var cw = $('.pp-frame').width();
+            $('.pp-frame').css({'height':cw+'px'});
+            $('.pp-frame').css({'max-height':cw+'px'});
+        }
         //$scope.init();
     }
 ]
