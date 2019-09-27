@@ -32,11 +32,7 @@ app.controller('MainCtrl', ['$scope', '$http', '$filter', '$route', '$routeParam
 
         var req = {
             method: 'GET',
-            url: 'https://raw.githubusercontent.com/Protirus/OneMinuteWith/fancyui/interviews/interviews.json',
-            // url: 'https://api.github.com/repos/protirus/OneMinuteWith/contents/interviews/interviews.json?ref=fancyui',
-            // url: 'https://api.github.com/repos/protirus/OneMinuteWith/contents/interviews/',
-            // https://raw.githubusercontent.com/:owner/:repo/master/:path
-            // https://raw.githubusercontent.com/Protirus/Tagger/master/README.md
+            url: 'https://raw.githubusercontent.com/Protirus/OneMinuteWith/master/interviews/interviews.json',
             headers: {
                 'Accept': 'application/vnd.github.mercy-preview+json'
             }
@@ -67,17 +63,13 @@ app.controller('InterviewCtrl', ['$scope', '$http', '$routeParams',
 
         loadFile = (fileName) => {
             //console.log(fileName);
-            var url = 'https://raw.githubusercontent.com/Protirus/OneMinuteWith/fancyui/interviews/' + fileName;
+            var url = 'https://raw.githubusercontent.com/Protirus/OneMinuteWith/master/interviews/' + fileName;
             $scope.url = url;
             //console.log(url);
 
             var req = {
                 method: 'GET',
-                url: 'https://raw.githubusercontent.com/Protirus/OneMinuteWith/fancyui/interviews/interviews.json',
-                // url: 'https://api.github.com/repos/protirus/OneMinuteWith/contents/interviews/interviews.json?ref=fancyui',
-                // url: 'https://api.github.com/repos/protirus/OneMinuteWith/contents/interviews/',
-                // https://raw.githubusercontent.com/:owner/:repo/master/:path
-                // https://raw.githubusercontent.com/Protirus/Tagger/master/README.md
+                url: 'https://raw.githubusercontent.com/Protirus/OneMinuteWith/master/interviews/interviews.json',
                 headers: {
                     'Accept': 'application/vnd.github.mercy-preview+json'
                 }
