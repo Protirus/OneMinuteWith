@@ -27,7 +27,7 @@ app.controller('MainCtrl', ['$scope', '$http', '$filter', '$route', '$routeParam
         this.$location = $location;
         this.$routeParams = $routeParams;
 
-        // $scope.location = window.location.pathname;
+        $scope.location = window.location.pathname;
         //$scope.location = 'OneMinuteWith/';
 
         var req = {
