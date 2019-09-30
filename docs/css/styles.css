@@ -319,6 +319,35 @@ a:active {
     object-fit:cover;
 }
 
+.pp-frame {
+    position: relative;
+  }
+  
+.pp-img {
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.informal-img {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.pp-frame:hover .pp-img {
+    opacity: 1;
+}
+
+.pp-frame:hover .informal-img {
+    opacity: 1;
+}
+
 /* telugu */
 @font-face {
     font-family: 'Hind Guntur';

@@ -99,10 +99,14 @@ Function InputInterview
     $inputInterviewUrl = Read-Host
     $inputFileName = Split-Path $inputInterviewUrl -Leaf
 
-    Write-Host "Please Enter The Employee Picture Url"
+    Write-Host "Please Enter The Formal Employee Picture Url"
     Write-Host -ForegroundColor DarkYellow "aka https://avatars2.githubusercontent.com/u/33064621?s=460&v=4"
-    $inputImageUrl = Read-Host
+    $inputFormalImageUrl = Read-Host
     
+    Write-Host "Please Enter The Informal (Fun) Employee Picture Url"
+    Write-Host -ForegroundColor DarkYellow "aka https://avatars2.githubusercontent.com/u/33064621?s=460&v=4"
+    $inputInformalImageUrl = Read-Host
+
     Write-Host "Please Enter The Date Of The Interview (dd/MM/yyyy)"
     $inputInterviewDate = Read-Host
 
@@ -119,7 +123,8 @@ Function InputInterview
     $inputInterview | Add-Member -MemberType NoteProperty -Name shortDescription -Value inputShortDescription
     $inputInterview | Add-Member -MemberType NoteProperty -Name interviewUrl -Value $inputInterviewUrl
     $inputInterview | Add-Member -MemberType NoteProperty -Name fileName -Value $inputFileName
-    $inputInterview | Add-Member -MemberType NoteProperty -Name imageUrl -Value $inputImageUrl
+    $inputInterview | Add-Member -MemberType NoteProperty -Name formalImageUrl -Value $inputFormalImageUrl
+    $inputInterview | Add-Member -MemberType NoteProperty -Name informalImageUrl -Value $inputInformalImageUrl
     $inputInterview | Add-Member -MemberType NoteProperty -Name interviewDate -Value $inputInterviewDate
 
     Write-Host "New One Minute With interview record:"
