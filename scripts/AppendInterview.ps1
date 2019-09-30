@@ -99,11 +99,11 @@ Function InputInterview
     $inputInterviewUrl = Read-Host
     $inputFileName = Split-Path $inputInterviewUrl -Leaf
 
-    Write-Host "Please Enter The Employee Picture Url"
+    Write-Host "Please Enter The Formal Employee Picture Url"
     Write-Host -ForegroundColor DarkYellow "aka https://avatars2.githubusercontent.com/u/33064621?s=460&v=4"
     $inputFormalImageUrl = Read-Host
     
-    Write-Host "Please Enter The Employee Picture Url"
+    Write-Host "Please Enter The Informal (Fun) Employee Picture Url"
     Write-Host -ForegroundColor DarkYellow "aka https://avatars2.githubusercontent.com/u/33064621?s=460&v=4"
     $inputInformalImageUrl = Read-Host
 
