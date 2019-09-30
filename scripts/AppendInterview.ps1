@@ -120,7 +120,7 @@ Function InputInterview
     $inputInterview | Add-Member -MemberType NoteProperty -Name employeeName -Value $inputName
     #$inputInterview | Add-Member -MemberType NoteProperty -Name employeeName -Value "$inputFirstName $inputLastName"
     $inputInterview | Add-Member -MemberType NoteProperty -Name employeeRole -Value $inputRole
-    $inputInterview | Add-Member -MemberType NoteProperty -Name shortDescription -Value inputShortDescription
+    $inputInterview | Add-Member -MemberType NoteProperty -Name shortDescription -Value $inputShortDescription
     $inputInterview | Add-Member -MemberType NoteProperty -Name interviewUrl -Value $inputInterviewUrl
     $inputInterview | Add-Member -MemberType NoteProperty -Name fileName -Value $inputFileName
     $inputInterview | Add-Member -MemberType NoteProperty -Name formalImageUrl -Value $inputFormalImageUrl
