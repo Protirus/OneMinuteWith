@@ -1,6 +1,4 @@
-# One Minute With
-
-## Jonathan Mathews
+# One Minute With Jonathan Mathews
 
 
 
