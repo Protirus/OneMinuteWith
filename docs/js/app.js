@@ -87,6 +87,10 @@ app.controller('InterviewCtrl', ['$scope', '$http', '$routeParams',
 
                         $("#interview-pp-informal").attr("src", record.informalImageUrl);
                         $("#interview-pp-informal").attr("alt", altText);
+
+                        // interview-fullname
+                        $("#employee-fullname").text(record.employeeName.fullName);
+                        $("#employee-role").text(record.employeeRole);
                     }
                 );
             };
