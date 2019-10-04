@@ -1,6 +1,4 @@
-# One Minute With
-
-## Mike Gibson
+# One Minute With Mike Gibson
 
 </br>
 
