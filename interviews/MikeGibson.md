@@ -1,15 +1,3 @@
-# One Minute With Mike Gibson
-
-This month we are chatting to Mike, Technical Director at Protirus
-
-<br/>
-
-### What is your job role at Protirus?
-
-Technical director on LinkedIN, though I also wear the hat of security service architect and internal product manager depending on the day. 
-
-<br/>
-
 ### How do people respond to your job title
 
 I rarely reveal it.
