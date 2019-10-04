@@ -114,6 +114,7 @@ app.controller('InterviewCtrl', ['$scope', '$http', '$routeParams',
             $(window).on('resize', function() {
                 SetProfilePictureFrameSize();
             });
+            $("html, body").scrollTop(0);
         };
 
         function SetProfilePictureFrameSize() {
