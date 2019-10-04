@@ -103,7 +103,7 @@ app.controller('InterviewCtrl', ['$scope', '$http', '$routeParams',
 
         $scope.init = () => {
             $scope.contents = '';
-            console.log(this.params);
+            // console.log(this.params);
             loadFile(this.params["fileName"]);
             loadInterviewData(this.params["fileName"]);
 
@@ -128,7 +128,7 @@ app.controller('InterviewCtrl', ['$scope', '$http', '$routeParams',
 
 // http://jsfiddle.net/davidchase03/u54Kh/
 app.directive('markdown', function () {
-    var converter = new Showdown.converter();
+    var converter = new Showdown.converter({simpleLineBreaks: true});
     return {
         restrict: 'A',
         link: function (scope, element, attrs) {

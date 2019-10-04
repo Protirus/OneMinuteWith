@@ -353,6 +353,10 @@ a:active {
     margin-bottom: 50px;
 }
 
+.rendered-markdown h3 {
+    padding-top: 50px !important;
+}
+
 /* telugu */
 @font-face {
     font-family: 'Hind Guntur';
