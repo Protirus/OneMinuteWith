@@ -99,6 +99,10 @@ Function InputInterview
     $inputInterviewUrl = Read-Host
     $inputFileName = Split-Path $inputInterviewUrl -Leaf
 
+    Write-Host "Please Enter The Thumbnail Employee Picture Url"
+    Write-Host -ForegroundColor DarkYellow "aka https://avatars2.githubusercontent.com/u/33064621?s=460&v=4"
+    $inputThumbnailImageUrl = Read-Host
+
     Write-Host "Please Enter The Formal Employee Picture Url"
     Write-Host -ForegroundColor DarkYellow "aka https://avatars2.githubusercontent.com/u/33064621?s=460&v=4"
     $inputFormalImageUrl = Read-Host
@@ -123,6 +127,7 @@ Function InputInterview
     $inputInterview | Add-Member -MemberType NoteProperty -Name shortDescription -Value $inputShortDescription
     $inputInterview | Add-Member -MemberType NoteProperty -Name interviewUrl -Value $inputInterviewUrl
     $inputInterview | Add-Member -MemberType NoteProperty -Name fileName -Value $inputFileName
+    $inputInterview | Add-Member -MemberType NoteProperty -Name thumbnailImageUrl -Value $inputThumbnailImageUrl
     $inputInterview | Add-Member -MemberType NoteProperty -Name formalImageUrl -Value $inputFormalImageUrl
     $inputInterview | Add-Member -MemberType NoteProperty -Name informalImageUrl -Value $inputInformalImageUrl
     $inputInterview | Add-Member -MemberType NoteProperty -Name interviewDate -Value $inputInterviewDate
