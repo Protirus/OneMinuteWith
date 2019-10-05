@@ -25,7 +25,7 @@
         <div ng-repeat="interview in interviews | filter:searchText" class="col-md-4">
             <div class="card box-shadow animated" data-aos="fade-up" data-aos-delay="{{($index % 3 ) * 300}}" data-aos-duration="1000" style="margin-bottom: 30px;">
                 <a class="card-img-container" ng-href="{{location}}/Interview/{{interview.fileName}}" title="One Minute With {{interview.employeeName.firstName}}">
-                    <img class="card-img" ng-src="{{interview.formalImageUrl}}" ng-alt="Image of {{interview.employeeName.fullName}} - {{interview.employeeRole}}" onerror="this.onerror=null;this.src='/assets/placeholder-prt.png';"/>
+                    <img class="card-img" ng-src="{{interview.thumbnailImageUrl}}" ng-alt="Image of {{interview.employeeName.fullName}} - {{interview.employeeRole}}" onerror="this.onerror=null;this.src='/assets/placeholder-prt.png';"/>
                 </a>
                 <div class="card-body">
                 <h3>{{interview.employeeName.fullName}}</h3>
