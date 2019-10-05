@@ -1,46 +1,34 @@
-# One Minute With Mike Gibson
-
-This month we are chatting to Mike, Technical Director at Protirus
-
-<br/>
-
-### What is your job role at Protirus?
-
-Technical director on LinkedIN, though I also wear the hat of security service architect and internal product manager depending on the day. 
-
-<br/>
-
-### How do people respond to your job title
+#### How do people respond to your job title
 
 I rarely reveal it.
 
 <br/>
 
-### What gets you out of bed in the morning?
+#### What gets you out of bed in the morning?
 
 My children and a passion to get on with the success of Protirus.
 
 <br/>
 
-### If you could have any super power, what would you choose and why?
+#### If you could have any super power, what would you choose and why?
 
 The ability to fly. I’ve spent enough time sat in airports these last few years.
 
 <br/>
 
-### Who in the office is the best at picking the Friday lunch spot?
+#### Who in the office is the best at picking the Friday lunch spot?
 
 Ah, the legendary Friday lunch. No idea, I’m a solitary runner at lunchtime.
 
 <br/>
 
-### What is your top piece of advice for someone looking to get into IT?
+#### What is your top piece of advice for someone looking to get into IT?
 
 The best consultants have done their time. Don’t knock entry level, if you work hard behind the scenes, you soon advance.
 
 <br/>
 
-### What do you enjoy doing when you are not at work?
+#### What do you enjoy doing when you are not at work?
 
 Running. Playing by the sea on the beach or in the skatepark with the kids.
 
@@ -53,12 +41,12 @@ un-holy speed.
 
 <br/>
 
-### Knowing what you know now, what advice would you have given yourself on your first day?
+#### Knowing what you know now, what advice would you have given yourself on your first day?
 
 None, I would ignore my older self and do it my way regardless.
 
 <br/>
 
-### Anything you’d like to say to anyone considering working for Protirus?
+#### Anything you’d like to say to anyone considering working for Protirus?
 
 Send your CV. Even if you’re not ready yet, we are always happy to chat. 

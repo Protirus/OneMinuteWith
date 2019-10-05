@@ -87,6 +87,10 @@ app.controller('InterviewCtrl', ['$scope', '$http', '$routeParams',
 
                         $("#interview-pp-informal").attr("src", record.informalImageUrl);
                         $("#interview-pp-informal").attr("alt", altText);
+
+                        // interview-fullname
+                        $("#employee-fullname").text(record.employeeName.fullName);
+                        $("#employee-role").text(record.employeeRole);
                     }
                 );
             };
@@ -99,7 +103,7 @@ app.controller('InterviewCtrl', ['$scope', '$http', '$routeParams',
 
         $scope.init = () => {
             $scope.contents = '';
-            console.log(this.params);
+            // console.log(this.params);
             loadFile(this.params["fileName"]);
             loadInterviewData(this.params["fileName"]);
 
@@ -110,6 +114,7 @@ app.controller('InterviewCtrl', ['$scope', '$http', '$routeParams',
             $(window).on('resize', function() {
                 SetProfilePictureFrameSize();
             });
+            $("html, body").scrollTop(0);
         };
 
         function SetProfilePictureFrameSize() {
@@ -123,7 +128,7 @@ app.controller('InterviewCtrl', ['$scope', '$http', '$routeParams',
 
 // http://jsfiddle.net/davidchase03/u54Kh/
 app.directive('markdown', function () {
-    var converter = new Showdown.converter();
+    var converter = new Showdown.converter({simpleLineBreaks: true});
     return {
         restrict: 'A',
         link: function (scope, element, attrs) {

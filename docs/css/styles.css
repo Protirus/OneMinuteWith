@@ -111,12 +111,11 @@ a:active {
 .card-text-or {
     overflow: visible;
     text-overflow: ellipsis;
-    display: -webkit-box;
     line-height: 16px;     /* fallback */
-    max-height: 3em;      /* fallback */
+    max-height: 4em;      /* fallback */
     -webkit-line-clamp: 3; /* number of lines to show */
     -webkit-box-orient: vertical;
-    min-height: 3em;
+    min-height: 4em;
 }
 
 @media screen and (max-width: 992px) and (min-width: 768px) {
@@ -346,6 +345,15 @@ a:active {
 
 .pp-frame:hover .informal-img {
     opacity: 1;
+}
+
+.oneminwith-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.rendered-markdown h3 {
+    padding-top: 50px !important;
 }
 
 /* telugu */
