@@ -43,7 +43,7 @@ Travelling. As an expat in a previous life, I’m always on the look out for the
 
 #### If a movie of your life were to be made, what would the soundtrack be?
 
-That’s a good one. Right now, I’m leaning towards something like the soundtrack from Lock Stock and Two Smoking Barrels, maybe Reservoir Dogs at a push. The wife says she more gangster than me so maybe those sound tracks are wishful thinking 😊
+That’s a good one. Right now, I’m leaning towards something like the soundtrack from Lock Stock and Two Smoking Barrels, maybe Reservoir Dogs at a push. The wife says she's more gangster than me so maybe those sound tracks are just wishful thinking 😊
 
 <br/>
 
