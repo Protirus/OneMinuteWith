@@ -30,11 +30,11 @@ The best consultants have done their time. Don’t knock entry level, if you wor
 
 #### What do you enjoy doing when you are not at work?
 
-Running. Playing by the sea on the beach or in the skatepark with the kids.
+Running. Playing by the sea on the beach or in the skatepark with my kids.
 
 <br/>
 
-### If a movie of your life were to be made, what would the soundtrack be?
+#### If a movie of your life were to be made, what would the soundtrack be?
 
 Beasty Boys -> Happy Mondays -> Rachmaninoff -> EDM -> Any Indy BUT Oasis -> Anything played on ZZZ -> An unhealthy addiction to Spotify peppered with Disney played at some
 un-holy speed.
