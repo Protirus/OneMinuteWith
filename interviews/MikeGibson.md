@@ -36,7 +36,7 @@ Running. Playing by the sea on the beach or in the skatepark with my kids.
 
 #### If a movie of your life were to be made, what would the soundtrack be?
 
-Beasty Boys -> Happy Mondays -> Rachmaninoff -> EDM -> Any Indy BUT Oasis -> Anything played on ZZZ -> An unhealthy addiction to Spotify peppered with Disney played at some
+Beastie Boys -> Happy Mondays -> Rachmaninoff -> EDM -> Any Indy **BUT** Oasis -> Anything played on ZZZ -> An unhealthy addiction to Spotify peppered with Disney played at some
 un-holy speed.
 
 <br/>
