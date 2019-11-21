@@ -30,8 +30,8 @@ Loser – Beck.
 
 ### Knowing what you know now, what advice would you have given yourself on your first day?
 
-Don’t Listen to Mike if he mentions Powershell, or Snow. 
+I think I got off to a good start at Protirus, I can thank Sam and Kev for that. If I had to say something, I’d say to myself, have confidence in what you’re doing. You’re supported by colleagues who are some of the best in the industry, they will put confidence in you, so have some in yourself. 
 
 ### Anything you’d like to say to anyone considering working for Protirus?
 
-Don’t Listen to Mike if he mentions Powershell, or Snow.
+Not only is the work we do interesting, cutting edge, and something to be immensely proud of, but we’ve got some of the best talent in the industry at Protirus, and the atmosphere is very supportive, and passionate about what we do. If you get the chance, just apply. 
