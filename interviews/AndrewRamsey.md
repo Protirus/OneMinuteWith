@@ -1,5 +1,3 @@
-# One Minute With Andrew Ramsey
-
 ### How do people respond to your job title
 
 By saying “oh, that’s *nice*” whilst feigning interest.  

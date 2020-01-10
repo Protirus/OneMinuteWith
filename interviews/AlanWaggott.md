@@ -1,5 +1,3 @@
-# One Minute With Alan Waggott
-
 ### How do people respond to your job title
 
 How long did it take to get your SIA badge
