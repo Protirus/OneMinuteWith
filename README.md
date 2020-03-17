@@ -1,6 +1,6 @@
 # One Minute With
 
-Welcome to the Protirus One Minute With site!
+View the Protirus One Minute With Site [here!](https://protirus.github.io/OneMinuteWith/)
 
 This is a collection of interviews with our staff, learn a bit more about the people behind our great team.
 
@@ -8,7 +8,7 @@ Protirus is a Cyber Security Technology Firm based in the North East of England.
 
 For any enquiries about Protirus and what we can offer, please contact info@protirus.com
 
- ---
+---
 See [One Minute With](http://oneminutewith.com)
 
 > one min·ute with BLOG [wən mi-nət 'wəth]
